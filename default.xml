@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Copyright 2018, Data61
+     Commonwealth Scientific and Industrial Research Organisation (CSIRO)
+     ABN 41 687 119 230.
+
+     This software may be distributed and modified according to the terms of
+     the BSD 2-Clause license. Note that NO WARRANTY is provided.
+     See "LICENSE_BSD2.txt" for details.
+
+     @TAG(DATA61_BSD)
+-->
+<manifest>
+  <remote fetch="../seL4" name="seL4"/>
+  <remote fetch="../sel4proj" name="sel4proj"/>
+
+  <default remote="seL4" revision="master"/>
+
+  <project name="musllibc.git" path="projects/musllibc" revision="f58dacf44a679a2d7c10fbb8d8bc8f58e2123791" upstream="sel4">
+    <linkfile dest="libs/libmuslc" src="."/>
+  </project>
+  <project name="seL4.git" path="kernel" revision="c3d0542337e898678a12c09d5cb8f11f723e1d10" upstream="master"/>
+  <project name="seL4_libs.git" path="projects/seL4_libs" revision="1697cb16ecbc7820cbda78d7c7c1896e884195a1" upstream="master">
+    <linkfile dest="libs/libsel4debug" src="libsel4debug"/>
+    <linkfile dest="libs/libsel4platsupport" src="libsel4platsupport"/>
+    <linkfile dest="libs/libsel4sync" src="libsel4sync"/>
+  </project>
+  <project name="seL4_tools.git" path="projects/tools" revision="9cd9d57ec8783db3d3bcea1821d7e7e1fe84d34e" upstream="master">
+    <linkfile dest="tools/common" src="common-tool"/>
+    <linkfile dest="tools/kbuild" src="kbuild-tool"/>
+    <linkfile dest="tools/elfloader" src="elfloader-tool"/>
+    <linkfile dest="tools/cmake-tool" src="cmake-tool"/>
+    <linkfile dest="CMakeLists.txt" src="cmake-tool/default-CMakeLists.txt"/>
+    <linkfile dest="init-build.sh" src="cmake-tool/init-build.sh"/>
+  </project>
+  <project name="aos.git" path="projects/aos" upstream="master" remote="sel4proj">
+    <linkfile dest="Makefile" src="Makefile"/>
+    <linkfile dest="Kbuild" src="Kbuild"/>
+    <linkfile dest="Kconfig" src="Kconfig"/>
+    <linkfile dest="configs" src="configs"/>
+    <linkfile dest="apps" src="apps"/>
+    <linkfile dest="libs/libsel4" src="../../kernel/libsel4"/>
+    <linkfile dest="libs/libclock" src="libclock"/>
+    <linkfile dest="libs/libserial" src="libserial"/>
+    <linkfile dest="libs/libsos" src="libsos"/>
+    <linkfile dest="libs/libnfs" src="libnfs"/>
+    <linkfile dest="libs/libsel4cspace" src="libsel4cspace"/>
+  </project>
+  <project name="util_libs.git" path="projects/util_libs" revision="9e249f940b84a9c803f79d34fbcfc5c98e722bfc" upstream="master">
+    <linkfile dest="libs/libcpio" src="libcpio"/>
+    <linkfile dest="libs/libelf" src="libelf"/>
+    <linkfile dest="libs/libutils" src="libutils"/>
+    <linkfile dest="libs/libethdrivers" src="libethdrivers"/>
+    <linkfile dest="libs/liblwip" src="liblwip"/>
+    <linkfile dest="libs/libplatsupport" src="libplatsupport"/>
+  </project>
+</manifest>
+
+
