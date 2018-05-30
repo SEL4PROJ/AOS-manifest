@@ -21,8 +21,6 @@
   </project>
   <project name="seL4.git" path="kernel" revision="c3d0542337e898678a12c09d5cb8f11f723e1d10" upstream="master"/>
   <project name="seL4_libs.git" path="projects/seL4_libs" revision="1697cb16ecbc7820cbda78d7c7c1896e884195a1" upstream="master">
-    <linkfile dest="libs/libsel4debug" src="libsel4debug"/>
-    <linkfile dest="libs/libsel4platsupport" src="libsel4platsupport"/>
     <linkfile dest="libs/libsel4sync" src="libsel4sync"/>
   </project>
   <project name="seL4_tools.git" path="projects/tools" revision="9cd9d57ec8783db3d3bcea1821d7e7e1fe84d34e" upstream="master">
@@ -45,6 +43,7 @@
     <linkfile dest="libs/libsos" src="libsos"/>
     <linkfile dest="libs/libnfs" src="libnfs"/>
     <linkfile dest="libs/libsel4cspace" src="libsel4cspace"/>
+    <linkfile dest="libs/libaos" src="libaos"/>
   </project>
   <project name="util_libs.git" path="projects/util_libs" revision="9e249f940b84a9c803f79d34fbcfc5c98e722bfc" upstream="master">
     <linkfile dest="libs/libcpio" src="libcpio"/>
