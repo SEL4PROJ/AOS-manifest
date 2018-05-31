@@ -24,18 +24,12 @@
     <linkfile dest="libs/libsel4sync" src="libsel4sync"/>
   </project>
   <project name="seL4_tools.git" path="projects/tools" revision="9cd9d57ec8783db3d3bcea1821d7e7e1fe84d34e" upstream="master">
-    <linkfile dest="tools/common" src="common-tool"/>
-    <linkfile dest="tools/kbuild" src="kbuild-tool"/>
     <linkfile dest="tools/elfloader" src="elfloader-tool"/>
     <linkfile dest="tools/cmake-tool" src="cmake-tool"/>
     <linkfile dest="CMakeLists.txt" src="cmake-tool/default-CMakeLists.txt"/>
     <linkfile dest="init-build.sh" src="cmake-tool/init-build.sh"/>
   </project>
   <project name="aos.git" path="projects/aos" upstream="master" remote="sel4proj">
-    <linkfile dest="Makefile" src="Makefile"/>
-    <linkfile dest="Kbuild" src="Kbuild"/>
-    <linkfile dest="Kconfig" src="Kconfig"/>
-    <linkfile dest="configs" src="configs"/>
     <linkfile dest="apps" src="apps"/>
     <linkfile dest="libs/libsel4" src="../../kernel/libsel4"/>
     <linkfile dest="libs/libclock" src="libclock"/>
