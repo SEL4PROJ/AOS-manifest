@@ -16,7 +16,7 @@
 
   <default remote="seL4" revision="master"/>
 
-  <project name="musllibc.git" path="projects/musllibc" />
+  <project name="musllibc.git" path="projects/musllibc" revision="seL4" />
   <project name="seL4.git" path="kernel" />
   <!-- we only use libsel4sync from here -->
   <project name="seL4_libs.git" path="projects/seL4_libs"/>
