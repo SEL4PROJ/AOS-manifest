@@ -16,19 +16,19 @@
 
   <default remote="seL4" revision="master"/>
 
-  <project name="musllibc.git" path="projects/musllibc" revision="f58dacf44a679a2d7c10fbb8d8bc8f58e2123791" upstream="sel4" />
-  <project name="seL4.git" path="kernel" revision="c3d0542337e898678a12c09d5cb8f11f723e1d10" upstream="master"/>
+  <project name="musllibc.git" path="projects/musllibc" />
+  <project name="seL4.git" path="kernel" />
   <!-- we only use libsel4sync from here -->
-  <project name="seL4_libs.git" path="projects/seL4_libs" revision="1697cb16ecbc7820cbda78d7c7c1896e884195a1" upstream="master"/>
+  <project name="seL4_libs.git" path="projects/seL4_libs"/>
   <!-- we use tools/elfloader and tools/cmake-tool -->
-  <project name="seL4_tools.git" path="projects/tools" revision="9cd9d57ec8783db3d3bcea1821d7e7e1fe84d34e" upstream="master">
+  <project name="seL4_tools.git" path="tools/seL4">
+      <linkfile dest="CMakeLists.txt" src="cmake-tool/default-CMakeLists.txt" />
   </project>
   <project name="aos.git" path="projects/aos" revision="wip" remote="sel4proj">
-    <linkfile dest="CMakeLists.txt" src="top-level-CMakeLists.txt"/>
-    <linkfile dest="init-build.sh" src="init-build.sh"/>
+    <linkfile dest="init-build.sh"  src="init-build.sh"/>
   </project>
   <!-- we use libcpio, libelf, libutils, libethdrivers, liblwip, libplatsupport -->
-  <project name="util_libs.git" path="projects/util_libs" revision="9e249f940b84a9c803f79d34fbcfc5c98e722bfc" upstream="master"/>
+  <project name="util_libs.git" path="projects/util_libs"/>
 </manifest>
 
 
