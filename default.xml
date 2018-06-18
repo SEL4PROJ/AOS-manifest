@@ -28,7 +28,8 @@
     <linkfile dest="init-build.sh"  src="init-build.sh"/>
   </project>
   <!-- we use libcpio, libelf, libutils, libethdrivers, liblwip, libplatsupport -->
-  <project name="util_libs.git" path="projects/util_libs"/>
+  <project name="util_libs.git" path="projects/util_libs" branch="alyons/aos-wip"/>
+  <project name="picotcp.git"       path="projects/picotcp" remote="sel4proj" />
 </manifest>
 
 
