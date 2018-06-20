@@ -13,6 +13,7 @@
 <manifest>
   <remote fetch="../seL4" name="seL4"/>
   <remote fetch="../sel4proj" name="sel4proj"/>
+  <remote fetch="https://github.com/tass-belgium" name="picotcp" />
 
   <default remote="seL4" revision="master"/>
 
@@ -29,7 +30,7 @@
   </project>
   <!-- we use libcpio, libelf, libutils, libethdrivers, liblwip, libplatsupport -->
   <project name="util_libs.git" path="projects/util_libs" branch="alyons/aos-wip"/>
-  <project name="picotcp.git"       path="projects/picotcp" remote="sel4proj" />
+  <project name="picotcp.git"       path="projects/picotcp" remote="picotcp" />
 </manifest>
 
 
