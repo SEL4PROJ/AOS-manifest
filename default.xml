@@ -30,7 +30,7 @@
   </project>
   <!-- we use libcpio, libelf, libutils, libethdrivers, liblwip, libplatsupport -->
   <project name="util_libs.git" path="projects/util_libs" branch="alyons/aos-wip"/>
-  <project name="picotcp.git"       path="projects/picotcp" remote="picotcp" />
+  <project name="picotcp.git"       path="projects/picotcp" remote="picotcp" revision="/refs/tags/v1.7.0"/>
 </manifest>
 
 
