@@ -18,7 +18,7 @@
   <default remote="seL4" revision="master"/>
 
   <project name="musllibc.git" path="projects/musllibc" revision="sel4" />
-  <project name="seL4.git" path="kernel" />
+  <project name="seL4.git" path="kernel" revision="alyons/allwinner"/>
   <!-- we only use libsel4sync from here -->
   <project name="seL4_libs.git" path="projects/seL4_libs"/>
   <!-- we use tools/elfloader and tools/cmake-tool -->
@@ -30,7 +30,7 @@
   </project>
   <!-- we use libcpio, libelf, libutils, libethdrivers, liblwip, libplatsupport -->
   <project name="util_libs.git" path="projects/util_libs" branch="alyons/aos-wip"/>
-  <project name="picotcp.git"       path="projects/picotcp" remote="picotcp" revision="/refs/tags/v1.7.0"/>
+  <project name="picotcp.git"       path="projects/picotcp" remote="picotcp" revision="refs/tags/v1.7.0"/>
 </manifest>
 
 
