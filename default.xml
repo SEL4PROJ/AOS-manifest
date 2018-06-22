@@ -13,7 +13,7 @@
 <manifest>
   <remote fetch="../seL4" name="seL4"/>
   <remote fetch="../sel4proj" name="sel4proj"/>
-  <remote fetch="https://github.com/tass-belgium" name="picotcp" />
+  <remote fetch="https://github.com/" name="github" />
 
   <default remote="seL4" revision="master"/>
 
@@ -28,9 +28,10 @@
   <project name="aos.git" path="projects/aos" revision="wip" remote="sel4proj">
     <linkfile dest="init-build.sh"  src="init-build.sh"/>
   </project>
-  <!-- we use libcpio, libelf, libutils, libethdrivers, liblwip, libplatsupport -->
+  <!-- we use libcpio, libelf, libutils -->
   <project name="util_libs.git" path="projects/util_libs" branch="alyons/aos-wip"/>
-  <project name="picotcp.git"       path="projects/picotcp" remote="picotcp" revision="refs/tags/v1.7.0"/>
+  <project name="tass-belgium/picotcp.git" path="projects/picotcp" remote="github" revision="refs/tags/v1.7.0"/>
+  <project name="sahlberg/libnfs.git" path="libnfs" remote="github" revision="refs/tags/libnfs-2.0.0"/>
 </manifest>
 
 
