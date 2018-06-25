@@ -28,9 +28,13 @@
   <project name="aos.git" path="projects/aos" revision="wip" remote="sel4proj">
     <linkfile dest="init-build.sh"  src="init-build.sh"/>
   </project>
-  <!-- we use libcpio, libelf, libutils -->
+  <!-- we use libcpio, libelf, libutils from util_libs -->
   <project name="util_libs.git" path="projects/util_libs" branch="alyons/aos-wip"/>
-  <project name="tass-belgium/picotcp.git" path="projects/picotcp" remote="github" revision="refs/tags/v1.7.0"/>
+  <!-- external repositories -->
+  <project name="tass-belgium/picotcp.git" path="projects/picotcp" remote="github"
+           revision="refs/tags/v1.7.0"/>
+  <project name="tass-belgium/picotcp-bsd.git" path="projects/picotcp-bsd" remote="github"
+           revision="refs/tags/v1.3"/>
   <project name="sahlberg/libnfs.git" path="libnfs" remote="github" revision="refs/tags/libnfs-2.0.0"/>
 </manifest>
 
