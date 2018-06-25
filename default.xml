@@ -30,6 +30,8 @@
   </project>
   <!-- we use libcpio, libelf, libutils from util_libs -->
   <project name="util_libs.git" path="projects/util_libs" branch="alyons/aos-wip"/>
+  <!-- we use picotcp, picotcp-bsd and nfs from projects_libs -->
+  <project name="projects_libs.git" path="projects/projects_libs" branch="alyons/aos-wip" />
   <!-- external repositories -->
   <project name="tass-belgium/picotcp.git" path="projects/picotcp" remote="github"
            revision="refs/tags/v1.7.0"/>
@@ -37,5 +39,3 @@
            revision="refs/tags/v1.3"/>
   <project name="sahlberg/libnfs.git" path="libnfs" remote="github" revision="refs/tags/libnfs-2.0.0"/>
 </manifest>
-
-
