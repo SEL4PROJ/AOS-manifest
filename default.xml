@@ -35,7 +35,7 @@
   <!-- external repositories -->
   <project name="tass-belgium/picotcp.git" path="projects/picotcp" remote="github"
            revision="refs/tags/v1.7.0"/>
-  <project name="tass-belgium/picotcp-bsd.git" path="projects/picotcp-bsd" remote="github"
-           revision="refs/tags/v1.3"/>
+  <project name="pingerino/picotcp-bsd.git" path="projects/picotcp-bsd" remote="github"
+           revision="missing-include"/>
   <project name="sahlberg/libnfs.git" path="libnfs" remote="github" revision="refs/tags/libnfs-2.0.0"/>
 </manifest>
