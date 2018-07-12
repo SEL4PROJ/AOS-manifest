@@ -45,10 +45,7 @@
   </project>
 
   <!-- external repositories -->
-  <project name="tass-belgium/picotcp.git" path="projects/picotcp" remote="github"
-           revision="refs/tags/v1.7.0"/>
-  <project name="pingerino/picotcp-bsd.git" path="projects/picotcp-bsd" remote="github"
-           revision="aos"/>
-  <project name="sahlberg/libnfs.git" path="libnfs" remote="github"
-           revision="ae6e708bf992c6d53cf9c6107dacf5727316c42b"/>
+  <project name="SEL4PROJ/picotcp.git" path="projects/picotcp" remote="github" />
+  <project name="SEL4PROJ/picotcp-bsd.git" path="projects/picotcp-bsd" remote="github"/>
+  <project name="sahlberg/libnfs.git" path="libnfs" remote="github" />
 </manifest>
