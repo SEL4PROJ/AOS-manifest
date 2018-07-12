@@ -19,8 +19,7 @@
 
   <project name="musllibc.git" path="projects/musllibc" revision="sel4" />
   <project name="seL4.git" path="kernel" revision="alyons/allwinner"/>
-  <!-- we only use libsel4sync from here -->
-  <project name="seL4_libs.git" path="projects/seL4_libs"/>
+
   <!-- we use tools/elfloader and tools/cmake-tool -->
   <project name="seL4_tools.git" path="tools/seL4">
       <linkfile dest="CMakeLists.txt" src="cmake-tool/default-CMakeLists.txt" />
@@ -28,10 +27,23 @@
   <project name="aos.git" path="projects/aos" revision="wip" remote="sel4proj">
     <linkfile dest="init-build.sh"  src="init-build.sh"/>
   </project>
-  <!-- we use libpicotcp, libcpio, libelf, libutils from util_libs -->
-  <project name="util_libs.git" path="projects/util_libs" branch="alyons/aos-wip"/>
-  <!-- we use nfs from projects_libs -->
-  <project name="projects_libs.git" path="projects/projects_libs" branch="alyons/aos-wip" />
+
+  <!-- the following projects are not fully released to students. As a result
+       we put the projects into a non-project dir (called unused) and symlink
+       directly into projects -->
+  <project name="seL4_libs.git" path="unused/seL4_libs">
+      <linkfile dest="projects/libsel4sync" src="libsel4sync"/>
+  </project>
+  <project name="util_libs.git" path="unused/util_libs" branch="alyons/aos-wip"/>
+      <linkfile dest="projects/libcpio" src="libcpio"/>
+      <linkfile dest="projects/libelf" src="libelf"/>
+      <linkfile dest="projects/libpicotcp" src="libpicotcp"/>
+      <linkfile dest="projects/libutils" src="libutils"/>
+  </project>
+  <project name="projects_libs.git" path="unused/projects_libs" branch="alyons/aos-wip">
+      <linkfile dest="projects/libnfs" src="libnfs"/>
+  </project>
+
   <!-- external repositories -->
   <project name="tass-belgium/picotcp.git" path="projects/picotcp" remote="github"
            revision="refs/tags/v1.7.0"/>
