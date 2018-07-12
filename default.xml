@@ -40,7 +40,7 @@
       <linkfile dest="projects/libpicotcp" src="libpicotcp"/>
       <linkfile dest="projects/libutils" src="libutils"/>
   </project>
-  <project name="projects_libs.git" path="unused/projects_libs" branch="alyons/aos-wip">
+  <project name="projects_libs.git" path="unused/projects_libs" remote="sel4proj">
       <linkfile dest="projects/libnfs" src="libnfs"/>
   </project>
 
