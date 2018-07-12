@@ -34,7 +34,7 @@
   <project name="seL4_libs.git" path="unused/seL4_libs">
       <linkfile dest="projects/libsel4sync" src="libsel4sync"/>
   </project>
-  <project name="util_libs.git" path="unused/util_libs" branch="alyons/aos-wip"/>
+  <project name="util_libs.git" path="unused/util_libs" branch="alyons/aos-wip">
       <linkfile dest="projects/libcpio" src="libcpio"/>
       <linkfile dest="projects/libelf" src="libelf"/>
       <linkfile dest="projects/libpicotcp" src="libpicotcp"/>
