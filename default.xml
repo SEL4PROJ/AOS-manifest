@@ -30,7 +30,7 @@
 
   <!-- the following projects are not fully released to students. As a result
        we put the projects into a non-project dir (called unused) and symlink
-       directly into projects -->
+       directly into projects, so unused itself can be removed. -->
   <project name="seL4_libs.git" path="unused/seL4_libs">
       <linkfile dest="projects/libsel4sync" src="libsel4sync"/>
   </project>
@@ -45,7 +45,7 @@
   </project>
 
   <!-- external repositories -->
-  <project name="SEL4PROJ/picotcp.git" path="projects/picotcp" remote="github" />
+  <project name="SEL4PROJ/picotcp.git" path="projects/picotcp" remote="github" revision="aos-2018"/>
   <project name="SEL4PROJ/picotcp-bsd.git" path="projects/picotcp-bsd" remote="github"/>
   <project name="sahlberg/libnfs.git" path="libnfs" remote="github" />
 </manifest>
