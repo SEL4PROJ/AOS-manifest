@@ -45,7 +45,7 @@
   </project>
 
   <!-- external repositories -->
-  <project name="SEL4PROJ/picotcp.git" path="projects/picotcp" remote="github" revision="aos-2018"/>
+  <project name="SEL4PROJ/picotcp.git" path="projects/picotcp" remote="github" revision="refs/tags/aos-2018"/>
   <project name="SEL4PROJ/picotcp-bsd.git" path="projects/picotcp-bsd" remote="github"/>
   <project name="sahlberg/libnfs.git" path="libnfs" remote="github" />
 </manifest>
