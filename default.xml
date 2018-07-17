@@ -13,7 +13,7 @@
 <manifest>
   <remote fetch="../seL4" name="seL4"/>
   <remote fetch="../sel4proj" name="sel4proj"/>
-  <remote fetch="https://github.com/" name="github" />
+  <remote fetch="https://github.com/SEL4PROJ" name="github" />
 
   <default remote="seL4" revision="master"/>
 
@@ -45,7 +45,7 @@
   </project>
 
   <!-- external repositories -->
-  <project name="SEL4PROJ/picotcp.git" path="projects/picotcp" remote="github" revision="refs/tags/aos-2018"/>
-  <project name="SEL4PROJ/picotcp-bsd.git" path="projects/picotcp-bsd" remote="github"/>
-  <project name="sahlberg/libnfs.git" path="libnfs" remote="github" />
+  <project name="picotcp.git" path="projects/picotcp" remote="github" revision="aos-2018"/>
+  <project name="picotcp-bsd.git" path="projects/picotcp-bsd" remote="github" revision="aos-2018"/>
+  <project name="sahlberg/libnfs.git" path="libnfs" remote="github" revision="aos-2018"/>
 </manifest>
