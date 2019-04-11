@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Copyright 2018, Data61
+     Commonwealth Scientific and Industrial Research Organisation (CSIRO)
+     ABN 41 687 119 230.
+
+     This software may be distributed and modified according to the terms of
+     the BSD 2-Clause license. Note that NO WARRANTY is provided.
+     See "LICENSE_BSD2.txt" for details.
+
+     @TAG(DATA61_BSD)
+-->
+<manifest>
+  <remote fetch="../seL4" name="seL4"/>
+  <remote fetch="../sel4proj" name="sel4proj"/>
+  <remote fetch="https://github.com/SEL4PROJ" name="github" />
+
+  <default remote="seL4" revision="master"/>
+
+  <project name="musllibc.git" path="projects/musllibc" revision="sel4" />
+  <project name="seL4.git" path="kernel"/>
+
+  <!-- we use tools/elfloader and tools/cmake-tool -->
+  <project name="seL4_tools.git" path="tools/seL4">
+      <linkfile dest="CMakeLists.txt" src="cmake-tool/default-CMakeLists.txt" />
+  </project>
+
+  <!-- the following projects are not fully released to students. As a result
+       we put the projects into a non-project dir (called unused) and symlink
+       directly into projects, so unused itself can be removed. -->
+  <project name="seL4_libs.git" path="unused/seL4_libs">
+      <linkfile dest="projects/libsel4sync" src="libsel4sync"/>
+  </project>
+  <project name="util_libs.git" path="unused/util_libs">
+      <linkfile dest="projects/libcpio" src="libcpio"/>
+      <linkfile dest="projects/libelf" src="libelf"/>
+      <linkfile dest="projects/libpicotcp" src="libpicotcp"/>
+      <linkfile dest="projects/libutils" src="libutils"/>
+  </project>
+  <project name="projects_libs.git" path="unused/projects_libs" remote="sel4proj">
+      <linkfile dest="projects/libnfs" src="libnfs"/>
+  </project>
+
+  <!-- external repositories -->
+  <project name="picotcp.git" path="projects/picotcp" remote="github" revision="aos-2018"/>
+  <project name="picotcp-bsd.git" path="projects/picotcp-bsd" remote="github" revision="aos-2018"/>
+  <project name="sahlberg/libnfs.git" path="libnfs" remote="github" revision="aos-2018"/>
+</manifest>

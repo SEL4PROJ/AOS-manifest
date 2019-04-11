@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-     Copyright 2018, Data61
+     Copyright 2017, Data61
      Commonwealth Scientific and Industrial Research Organisation (CSIRO)
      ABN 41 687 119 230.
 
@@ -15,7 +15,8 @@
 	<!-- include all the common repositories, we just want to define the kernel -->
 	<include name="common.xml"/>
 
-  <project name="aos.git" path="projects/aos" revision="wip" remote="sel4proj">
+  <project name="aos.git" path="projects/aos" remote="sel4proj" revision="tests">
     <linkfile dest="init-build.sh"  src="init-build.sh"/>
   </project>
+
 </manifest>
