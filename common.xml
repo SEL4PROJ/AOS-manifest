@@ -44,5 +44,5 @@
   <!-- external repositories -->
   <project name="picotcp.git" path="projects/picotcp" remote="github" revision="aos-2018"/>
   <project name="picotcp-bsd.git" path="projects/picotcp-bsd" remote="github" revision="aos-2018"/>
-  <project name="sahlberg/libnfs.git" path="libnfs" remote="github" revision="aos-2018"/>
+  <project name="libnfs.git" path="libnfs" remote="github" revision="aos-2018"/>
 </manifest>
