@@ -17,6 +17,7 @@
 
   <project name="aos.git" path="projects/aos" remote="sel4proj" revision="tests">
     <linkfile dest="init-build.sh"  src="init-build.sh"/>
+    <linkfile dest="settings.cmake" src="settings.cmake"/>
   </project>
 
 </manifest>
