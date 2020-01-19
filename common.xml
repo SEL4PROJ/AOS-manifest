@@ -26,6 +26,12 @@
       <linkfile dest="CMakeLists.txt" src="cmake-tool/default-CMakeLists.txt" />
   </project>
 
+  <!-- The AOS project itself -->
+  <project name="aos.git" path="projects/aos" remote="sel4proj">
+    <linkfile dest="init-build.sh"  src="init-build.sh"/>
+    <linkfile dest="settings.cmake" src="settings.cmake"/>
+  </project>
+
   <!-- the following projects are not fully released to students. As a result
        we put the projects into a non-project dir (called unused) and symlink
        directly into projects, so unused itself can be removed. -->
