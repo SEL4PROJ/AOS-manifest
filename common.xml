@@ -19,7 +19,7 @@
 
   <project name="sel4runtime.git" path="projects/sel4runtime" remote="sel4proj"/>
   <project name="musllibc.git" path="projects/musllibc" revision="sel4" />
-  <project name="seL4.git" path="kernel" revision="jamesye/aos-reset" />
+  <project name="seL4.git" path="kernel" revision="aos" />
 
   <!-- we use tools/elfloader and tools/cmake-tool -->
   <project name="seL4_tools.git" path="tools/seL4">
