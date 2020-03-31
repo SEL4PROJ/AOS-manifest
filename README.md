@@ -54,7 +54,7 @@ The project makes a number of assumptions regarding the setup used:
   # Autoboot configuration
   bootdelay=1
   bootcmd=tftp ${sel4_addr} ${sel4_image} && go ${sel4_addr}
-  sel4_addr=0x10000000
+  sel4_addr=0x20000000
   sel4_image=sos-image-arm-odroidc2
 
   # IP configuration
