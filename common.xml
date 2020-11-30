@@ -17,7 +17,7 @@
 
   <default remote="seL4" revision="master"/>
 
-  <project name="sel4runtime.git" path="projects/sel4runtime" remote="sel4proj"/>
+  <project name="sel4runtime.git" path="projects/sel4runtime" />
   <project name="musllibc.git" path="projects/musllibc" revision="sel4" />
   <project name="seL4.git" path="kernel" revision="aos" />
 
@@ -44,7 +44,7 @@
       <linkfile dest="projects/libpicotcp" src="libpicotcp"/>
       <linkfile dest="projects/libutils" src="libutils"/>
   </project>
-  <project name="projects_libs.git" path="unused/projects_libs" remote="sel4proj">
+  <project name="projects_libs.git" path="unused/projects_libs">
       <linkfile dest="projects/libnfs" src="libnfs"/>
   </project>
 
