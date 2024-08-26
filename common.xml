@@ -11,10 +11,9 @@
      @TAG(DATA61_BSD)
 -->
 <manifest>
-  <remote fetch="../seL4" name="seL4"/>
-  <remote fetch="../sel4proj" name="sel4proj"/>
-  <remote fetch="https://github.com/SEL4PROJ" name="github" />
-
+  <remote fetch="https://github.com/seL4/" name='seL4' />
+  <remote fetch="https://github.com/SEL4PROJ" name="sel4proj" />
+  <remote fetch="https://github.com/au-ts" name="au-ts" />
   <default remote="seL4" revision="master"/>
 
   <project name="sel4runtime.git" path="projects/sel4runtime" />
@@ -49,7 +48,9 @@
   </project>
 
   <!-- external repositories -->
-  <project name="picotcp.git" path="projects/picotcp" remote="github" revision="aos-2018"/>
-  <project name="picotcp-bsd.git" path="projects/picotcp-bsd" remote="github" revision="aos-2018"/>
-  <project name="libnfs.git" path="libnfs" remote="github" revision="aos-2018"/>
+  <project name="picotcp.git" path="projects/picotcp" revision="aos-2018"/>
+  <project name="picotcp-bsd.git" path="projects/picotcp-bsd" revision="aos-2018"/>
+  <project name="libnfs.git" path="libnfs" remote="sel4proj" revision="aos-2018"/>
+  <project name="libgdb.git" path="projects/libgdb" remote="au-ts" revision="aos" />
+	  
 </manifest>
