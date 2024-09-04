@@ -48,8 +48,8 @@
   </project>
 
   <!-- external repositories -->
-  <project name="picotcp.git" path="projects/picotcp" revision="aos-2018"/>
-  <project name="picotcp-bsd.git" path="projects/picotcp-bsd" revision="aos-2018"/>
+  <project name="picotcp.git" path="projects/picotcp" revision="aos-2024"/>
+  <project name="picotcp-bsd.git" path="projects/picotcp-bsd" revision="aos-2024"/>
   <project name="libnfs.git" path="libnfs" remote="sel4proj" revision="aos-2018"/>
   <project name="libgdb.git" path="projects/libgdb" remote="au-ts" revision="aos" />
 	  
