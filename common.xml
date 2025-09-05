@@ -17,7 +17,7 @@
   <default remote="seL4" revision="master"/>
 
   <project name="sel4runtime.git" path="projects/sel4runtime" />
-  <project name="musllibc.git" path="projects/musllibc" revision="sel4" />
+  <project name="musllibc.git" path="projects/musllibc" revision="sel4-pre-2025" />
   <project name="seL4.git" path="kernel" revision="aos" />
 
   <!-- we use tools/elfloader and tools/cmake-tool -->
